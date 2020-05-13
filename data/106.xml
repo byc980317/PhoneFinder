@@ -1,0 +1,26 @@
+<annotation>
+	<folder>data</folder>
+	<filename>106.jpg</filename>
+	<path>C:\Python 3.6 64\tcl\Interview\BrainCorp\Phone-Detector\data\106.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>490</width>
+		<height>326</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cell phone</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>305</xmin>
+			<ymin>107</ymin>
+			<xmax>353</xmax>
+			<ymax>142</ymax>
+		</bndbox>
+	</object>
+</annotation>
