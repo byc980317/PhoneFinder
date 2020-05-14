@@ -13,16 +13,15 @@ In this repository, execute pip install . --user
 Alternatively, run python setup.py build_ext --inplace (Basic Requirement: Microsoft Visul Studio C++ 14.0.0)
 
 <h2> Usage: </h2>
-Training:
-Create a snapshots folder
-Download resnet50_coco_best_v2.1.0.h5 from https://github.com/fizyr/keras-retinanet/releases
+<h3> Training </h3>
+Create a snapshots folder </br>
+Download resnet50_coco_best_v2.1.0.h5 from https://github.com/fizyr/keras-retinanet/releases </br>
 python keras_retinanet/bin/train.py --weights snapshots/resnet50_coco_best_v2.1.0.h5 --workers 0 --freeze-backbone csv phone_train.csv class_map.csv
+<h3> Prediction </h3>
+python find_phone.py 'Path-To-Image' </br>
+The result will be (x, y) where x and y are horizontal and vertical distance away from the origin (top-left corner). </br>
 
-Prediction:
-python find_phone.py 'Path-To-Image'
-The result will be (x, y) where x and y are horizontal and vertical distance away from the origin (top-left corner).
-
-Here are some sample results:
+Here are some sample results: </br>
 
 ![test-image1](/data/10.jpg)
 
